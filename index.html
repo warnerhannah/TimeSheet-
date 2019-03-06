@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Our TimeSheet</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Employee Database</h1>
+            <p class="lead">Submit your information below to be added to our database!</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            Current Employees
+        </div>
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Employee Name</th>
+                <th scope="col">Role</th>
+                <th scope="col">Start Date</th>
+                <th scope="col">Months Worked</th>
+                <th scope="col">Monthly Rate($)</th>
+                <th scope="col">Total Billed ($)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">John Doe</td>
+                <td>Instructor</td>
+                <td>01/01/1990</td>
+                <td>10</td>
+                <td>100</td>
+                <td>400</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <br>
+    <br>
+    <div class="card">
+        <div class="card-header">
+            Add Employee
+        </div>
+
+        <div class="card-body">
+            <div class="form-group" id="addemployee">
+                <form>
+                    <label for="name">Employee Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="">
+                    <label for="role">Role</label>
+                    <input type="text" class="form-control" id="role" placeholder="">
+                    <label for="date">Start Date</label>
+                    <input type="text" class="form-control" id="date" placeholder="MM/DD/YYYY">
+                    <label for="rate">Monthly Rate</label>
+                    <input type="text" class="form-control" id="rate" placeholder="">
+                    <input type="submit" id="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+<script src="assets/javascript.js"></script>
+</body>
+
+</html>
